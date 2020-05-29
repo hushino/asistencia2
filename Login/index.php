@@ -34,9 +34,6 @@ if(isset($_SESSION['datosUser']['nombreUser'])){
     <div class="container-login100" style="background-image: url('wall.jpg');">
       <div class="wrap-login100">
         <form class="login100-form validate-form" method="post" action="php/in.php">
-          <!--   <span class="login100-form-logo">
-            <i class="zmdi zmdi-landscape"></i>
-          </span> -->
           <span class="login100-form-logo">
             <i class="zmdi zmdi-account-box-o"></i>
           </span>

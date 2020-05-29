@@ -1,3 +1,12 @@
+<?php
+    session_start();
+    if(!isset($_SESSION['datosUser'])){
+    header("location:Login/index.php");
+    }
+    require_once("header/header.php");
+	  require_once('funciones/funciones.php');
+		require_once('funciones/conexion2.php');
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -9,11 +18,7 @@
 </head>
 
 <body>
-  <?php
-    require_once("header/header.php");
-	  require_once('funciones/funciones.php');
-		require_once('funciones/conexion2.php');
-	?>
+
 
   <div class="container-fluid">
     <h1>Cargar asistencias</h1>

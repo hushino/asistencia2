@@ -1,3 +1,15 @@
+<?php
+    session_start();
+    if(!isset($_SESSION['datosUser'])){
+    header("location:Login/index.php");
+    }
+    require_once("header/header.php");
+	  require_once('funciones/funciones.php');
+    require_once('funciones/conexion.php');
+    /*require_once('funciones/conexion2.php');*/
+    require "funciones/conexion2.php";
+   
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -9,14 +21,7 @@
 </head>
 
 <body>
-  <?php
-    require_once("header/header.php");
-	  require_once('funciones/funciones.php');
-    require_once('funciones/conexion.php');
-    /*require_once('funciones/conexion2.php');*/
-    require "funciones/conexion2.php";
-    session_start();
-	?>
+
   <div class="container-fluid">
     <?php
     $fechaInicio1='0';

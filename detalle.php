@@ -18,12 +18,8 @@
 </head>
 
 <body>
-
-
   <div class="container-fluid">
-
-
-    <table class="table table-bordered">
+    <table class="table table-bordered table-dark table-striped">
       <tbody>
         <?php
         $id = $_GET['id'];

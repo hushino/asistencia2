@@ -25,7 +25,7 @@
   <div class="container-fluid">
 
     <h1>Asistencias actuales</h1>
-    <table class="table table-bordered">
+    <table class="table table-bordered table-striped">
       <thead>
         <tr>
           <th scope="col">Efectivos</th>
@@ -38,7 +38,7 @@
       <tbody>
         <?php
              try {
-                $sql = "SELECT * FROM asistencias";
+                $sql = "SELECT * FROM asistencias order by fecha desc LIMIT 7";
                 $res=$conn->prepare($sql);
                 $res->execute();
                 $results = ($res->fetchAll(PDO::FETCH_ASSOC));
@@ -50,9 +50,13 @@
           <td><?php echo $row['presentes']; ?></td>
           <td><?php echo $row['ausentes']; ?></td>
           <td><?php echo $row['fecha']; ?></td>
-          <td><button type="button" class="btn btn-info">
-              <a style="text-decoration:none;color: white;" href="detalle.php?id=<?php echo  $row['id'];?>">ver</a>
-            </button></td>
+          <td>
+            <a style="text-decoration:none;color: white;" href="detalle.php?id=<?php echo  $row['id'];?>">
+              <button type="button" class="btn btn-info">
+                ver
+              </button>
+            </a>
+          </td>
         </tr>
         <?php
                         }

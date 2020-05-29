@@ -21,15 +21,7 @@ if(isset($_SESSION['datosUser']['nombreUser'])){
   <!--===============================================================================================-->
   <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
   <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-  <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-  <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
-  <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-  <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+
   <!--===============================================================================================-->
   <link rel="stylesheet" type="text/css" href="css/util.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -39,7 +31,7 @@ if(isset($_SESSION['datosUser']['nombreUser'])){
 <body>
 
   <div class="limiter">
-    <div class="container-login100" style="background-image: url('bg-01.jpg');">
+    <div class="container-login100" style="background-image: url('wall.jpg');">
       <div class="wrap-login100">
         <form class="login100-form validate-form" method="post" action="php/in.php">
           <span class="login100-form-logo">
@@ -47,7 +39,7 @@ if(isset($_SESSION['datosUser']['nombreUser'])){
           </span>
 
           <span class="login100-form-title p-b-34 p-t-27">
-            CONTROL DE ASISTENCIA
+            CONTROL DE ASISTENCIAS
           </span>
 
           <div class="wrap-input100 validate-input" data-validate="Enter username">
@@ -84,13 +76,7 @@ if(isset($_SESSION['datosUser']['nombreUser'])){
   <!--===============================================================================================-->
   <script src="vendor/bootstrap/js/popper.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-  <!--===============================================================================================-->
-  <script src="vendor/select2/select2.min.js"></script>
-  <!--===============================================================================================-->
-  <script src="vendor/daterangepicker/moment.min.js"></script>
-  <script src="vendor/daterangepicker/daterangepicker.js"></script>
-  <!--===============================================================================================-->
-  <script src="vendor/countdowntime/countdowntime.js"></script>
+
   <!--===============================================================================================-->
   <script src="js/main.js"></script>
   <style>

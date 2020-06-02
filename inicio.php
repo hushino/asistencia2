@@ -25,6 +25,7 @@
   <div class="container-fluid">
 
     <h1>Asistencias actuales</h1>
+    <h4>Ultimos siete dias</h4>
     <table class="table table-bordered table-striped">
       <thead>
         <tr>
